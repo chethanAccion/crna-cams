@@ -13,12 +13,8 @@ export default class AccountDetailScreen extends Component {
     const { account } = this.props.navigation.state.params;
     return (
       <View style={styles.container}>
-        <Text>
-          {account.name}
-        </Text>
-        <Text>
-          {account.address}
-        </Text>
+        <Text>{account.name}</Text>
+        <Text>{account.address}</Text>
         <Button title="Call" onPress={() => phonecall(account.phone, false)} />
         <Button
           title="SMS"
@@ -33,6 +29,13 @@ export default class AccountDetailScreen extends Component {
                 encodeURI(account.address)
             );
           }}
+        />
+        <Button
+          title="Feedback"
+          onPress={() =>
+            this.props.navigation.navigate('accountReport', {
+              account: account
+            })}
         />
       </View>
     );

@@ -20,5 +20,16 @@
       "latitude": 3.10265,
       "longitude": 101.636572
     }
+  },
+  {
+    "id": 11,
+    "name": "Mr. Chethan Ram",
+    "notes": "Indian ",
+    "phone": "8123087642",
+    "address": "whitefield,Bangalore",
+    "coord": {
+      "latitude": 12.9698,
+      "longitude": 77.7499
+    }
   }
 ]

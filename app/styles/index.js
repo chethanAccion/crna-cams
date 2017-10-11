@@ -30,5 +30,17 @@ export default StyleSheet.create({
   statusBarUnderlay: {
     height: 24,
     backgroundColor: 'rgba(0,0,0,0.2)'
+  },
+  textAlignCenter: {
+    textAlign: 'center'
+  },
+  marginTop10: {
+    marginTop: 10
+  },
+  multitextatr: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    margin: 10,
+    padding: 10
   }
 });
